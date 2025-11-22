@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <h2>My Portfolio</h2>
+      <nav>
+    <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
+    <a href="#about"><i class="fa-solid fa-user"></i> About</a>
+    <a href="#projects"><i class="fa-solid fa-briefcase"></i> Projects</a>
+    <a href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+</nav>
+<button id="themeToggle"><i class="fa-solid fa-sun"></i></button>
+
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="fade-in">
+    <img src="profile.jpg" alt="My Photo" class="profile-pic">
+
+    <h1 id="typing"></h1>
+
+    <p>I’m a passionate creator who enjoys building digital solutions and transforming ideas into clean and functional designs.</p>
+</section>
+
+
+    <!-- About Section -->
+    <section id="about" class="fade-in">
+        <h2>About Me</h2>
+        <p>I’m an aspiring web developer currently building my skills in creating modern, user-friendly websites. I enjoy learning new technologies and turning ideas into real, working projects. This portfolio is part of my journey as I grow in the world of tech and digital creativity.</p>
+        <a href="cv.pdf" download class="cv-btn">Download CV</a>
+
+    </section>
+
+    <!-- Projects Section -->
+  <section id="projects" class="fade-in">
+    <h2>My Projects</h2>
+<div class="slider-container fade-in">
+    <div class="slider">
+        <img src="images/img1.jpg" class="slide active">
+        <img src="images/img2.jpg" class="slide">
+        <img src="images/img3.jpg" class="slide">
+    </div>
+
+    <button class="prev"><i class="fa-solid fa-chevron-left"></i></button>
+    <button class="next"><i class="fa-solid fa-chevron-right"></i></button>
+</div>
+
+    <div class="project-grid">
+
+        <div class="project-box">
+            <h3>Organization Poster and Logo Design</h3>
+            <p>I design clean and meaningful posters and logos for schools, businesses, and individuals.</p>
+        </div>
+
+        <div class="project-box">
+            <h3>Office Automation Solutions</h3>
+            <p>I create simple tools that help offices automate daily tasks.</p>
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
+<section id="contact" class="fade-in">
+    <h2>Contact Me</h2>
+
+    <form action="https://formsubmit.co/zackkwendo@gmail.com" method="POST" class="contact-form">
+
+        <input type="text" name="name" placeholder="Your Name" required>
+
+        <input type="email" name="email" placeholder="Your Email" required>
+
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
+        <button type="submit" class="send-btn">Send Message</button>
+
+    </form>
+
+    <div class="social-links">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>©2025 My Portfolio</p>
+    </footer>
+<button id="toTop"><i class="fa-solid fa-arrow-up"></i></button>
+<script src="script.js"></script>
+<a href="https://wa.me/254794416809" target="_blank" id="whatsappFloat">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+</body>
+
+</html>

@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", () => {
+    document.body.classList.add("fade-in");
+});
+
 console.log("JavaScript is working!");
 let text = "Hello, I'm Kwendo Mboya";
 let index = 0;
@@ -64,9 +68,11 @@ function showSlide(index) {
     slides[index].classList.add("active");
 }
 
-document.querySelector(".next").addEventListener("click", () => {
-    currentSlide = (currentSlide + 1) % slides.length;
-    showSlide(currentSlide);
+document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("loader").style.opacity = "0";
+    setTimeout(() => {
+        document.getElementById("loader").style.display = "none";
+    }, 500);
 });
 
 document.querySelector(".prev").addEventListener("click", () => {
@@ -77,3 +83,8 @@ setInterval(() => {
     currentSlide = (currentSlide + 1) % slides.length;
     showSlide(currentSlide);
 }, 4000);
+document.querySelectorAll(".page-link").forEach(link => {
+    link.addEventListener("click", () => {
+        document.body.style.opacity = "0";
+    });
+});
